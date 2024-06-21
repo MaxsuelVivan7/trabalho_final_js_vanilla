@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas de Estacionamento</title>
+    <style>
+        .vaga {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            margin: 5px;
+            display: inline-block;
+        }
+        .ocupada {
+            background-color: cornflowerblue
+        }
+        .livre {
+            background-color: coral
+        }
+    </style>
+</head>
+<body>
+    <h1>Estacionamento</h1>
+    <div id="vagas-container">
+        <!-- Vagas serão adicionadas dinamicamente aqui -->
+    </div>
+    <br>
+    <button onclick="adicionarVaga()">Adicionar Vaga</button>
+    <button onclick="removerVaga()">Remover Vaga</button>
+    <br><br>
+    <input type="text" id="placa" placeholder="Digite a placa do carro">
+    <button onclick="registrarEntrada()">Registrar Entrada</button>
+    <button onclick="registrarSaida()">Registrar Saída</button>
+    <div id="tempo-permanencia"></div>
+    <div id="total-devido"></div>
+
+    <script src="estacionamento.js"></script>
+</body>
+</html>
